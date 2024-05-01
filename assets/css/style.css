@@ -1,0 +1,64 @@
+header {
+    grid-area: header;
+    background-color: lightblue;
+    text-align: center;
+}
+aside {
+    grid-area: aside;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main {
+    grid-area: main;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+footer {
+    grid-area: footer;
+    background-color: lightblue;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "aside main main main main"
+    "footer footer footer footer footer";
+    gap: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: lightgrey;
+    align-items: center;
+    margin: 10px;
+}
+.card h4 {
+    background-color: black;
+    color: white;
+}
+.image {
+    width: 90%;
+    height: 16vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1rem;
+}
+.image1 {
+    background-image: url(../images/zapatillas_deportivas.jpg);
+}
+.image2 {
+    background-image: url(../images/zapatos_formales.jpg);
+}
+.image3 {
+    background-image: url(../images/pantalones_formales.jpg);
+}
+.image4 {
+    background-image: url(../images/chaqueta_de_invierno.jpg);
+}
